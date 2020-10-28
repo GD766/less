@@ -5,7 +5,12 @@
 html{
 	font-family: 'Open Sans', sans-serif;
 	color: @fontColor;
+}
 
+border{
+	width: 100%;
+
+	margin: 0;
 }
 .container{
 	margin: 0 100px;
@@ -59,6 +64,7 @@ html{
 .first__content{
 	display: flex;
 	padding-bottom: 240px;
+
 	.content__data{
 		width: 50%;
 
@@ -67,6 +73,8 @@ html{
 			font-size: 72px;
 			line-height: 1.2;
 			margin: 0;
+
+			margin-bottom: 40px;
 		}
 
 		.data__price{
@@ -90,6 +98,8 @@ html{
 	.image{
 		margin-left: auto;
 		margin-right: 5%;
+
+
 	}
 }
 
@@ -117,3 +127,94 @@ html{
 		height: 1px;
 	}
 }
+
+
+//Buy
+
+.buy_container{
+	display: flex;
+	flex-direction: row;
+
+	img{
+		height: auto;
+		max-height: 80px;
+		width: 60px;
+		margin-right: 35px;
+	}
+
+	.sum{
+		margin-right: 5px;
+
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+	.buy{
+		width: 200px;
+		margin-right: 10px;
+
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.4;
+	}
+
+	.left_arrow,.right_arrow{
+		height: 24px;
+		width: 24px;
+
+		padding: 0;
+		margin-right: 5px;
+
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+}
+
+//Footer
+
+footer{
+	height: 65px;
+	width: 100%;
+	background-color: @bgColor;
+
+	.footer_container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.social_container{
+		display: flex;
+		flex-direction: row;
+
+			.social{
+				padding: 5px;
+			}
+		}
+
+
+	.politic{}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

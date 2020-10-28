@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
     <link rel="stylesheet/less" type="text/css" href="/css/style.less" />
 	<script src="//cdn.jsdelivr.net/npm/less" ></script>
+
+	<script src="js/buy.js"></script>
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
@@ -103,8 +106,86 @@ Content
 		</div>
 		<img class="image" src="img/styl_3.png" alt="кресло">
 	</div>
+
+
+	<div class="first__content">
+		<img class="image" src="img/styl_4.png" alt="кресло">
+		<div class="content__data">
+			<h1 class="data__name">Оттоманка</h1>
+			<h2 class="data__price">7 900 руб.</h2>
+			<div class="data__text">
+<p>Банкетка для лаунж-зоны в стиле Mid Century. Обивка из ткани, желтого цвета. Высокие ножки из дерева (массив ясеня), характерные для стиля 60-х. Банкетка идеально дополняет кресло.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="first__content">
+		<div class="content__data">
+			<h1 class="data__name">Заказать кресло</h1>
+
+			<div class="buy_container buy_styl_1">
+				<img src="img/styl_1.png" alt="">
+				<span class="buy">Кресло Contour жёлтое</span>
+				<div class="btn left_arrow">-</div>
+				<div class="sum">1</div>
+				<div class="btn right_arrow">+</div>
+			</div>
+
+			<div class="buy_container buy_styl_2">
+				<img src="img/styl_4.png" alt="">
+				<span class="buy">Оттоманка Contour жёлтая</span>
+				<div class="btn left_arrow">-</div>
+				<div class="sum">1</div>
+				<div class="btn right_arrow">+</div>
+			</div>
+
+			<h2 class="data__price">Итого: 25 100 руб.</h2>
+			<buttom class="btn">Оформить заказ</buttom>
+		</div>
+		<img class="image" src="img/mebel_1.png" alt="кресло">
+	</div>
+
+
 </div>
 </div>
 
+
+<!--***************************
+Footer
+****************************-->
+
+<footer>
+<div class="container">
+	<div class="footer_container">
+		<div class="social_container">
+			<div class="social">1</div>
+			<div class="social">2</div>
+			<div class="social">3</div>
+		</div>
+
+		<div class="politic">
+			<a href="file:#">Политика конфиденциальности</a>
+			© All Rights Reserved. Stulow
+		</div>
+	</div>
+</div>
+</footer>
+
 </body>
 </html>
+
+
+
+
+<script type="text/javascript">
+var minus = document.querySelector(".left_arrow");
+var plus = document.querySelector(".right_arrow");
+var sum = document.querySelector(".sum");
+
+minus.addEventListener('click', function(){
+		sum.textContent--;
+	});
+plus.addEventListener('click', function(){
+		sum.textContent++;
+	});
+</script>
